@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'maven:3-alpine'
             args '-v %homepath%/.m2:/root/.m2'
-           
+           	args '-w D:/manoj/Learning/jenkins/GitHub/simple-java-maven-app'
         }
     }
     stages {
