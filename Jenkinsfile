@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+            	dir(path: 'D:/manoj/Learning/jenkins/GitHub/simple-java-maven-app') {
                 sh 'mvn -B -DskipTests clean package' 
+                }
             }
         }
     }
